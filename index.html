@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Mujer, Hombre , Dormitorio , Electronica , Ofertas">
+        <meta name="author" content="Diego Matias Diaz Fuenzalida">
+        <meta name="description" content="Un navbar responsivo de una tienda de ropa">
+        <link href="estilo.css" rel="stylesheet"/>
+        <title>Quiz ingenieria web</title>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu">drop</label>
+            <nav class="menu">
+                <ul class="primero">
+                    <li class="principal">
+                        <a href="#">Mujer</a>
+                        <ul>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Ofertas</a></li>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Zapatos</a></li>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Ropa deportiva</a></li>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Accesorios</a> </li>
+                        </ul>
+                    </li>
+                    <li class="principal">
+                        <a href="#">Hombre</a>
+                        <ul >
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>ofertas</a></li>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>zapatos</a></li>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>ropa deportiva</a></li>
+                            <li class="escondido"><a href="#" class="elemento"onclick=menu(this)>accesorios</a> </li>
+                        </ul>
+                    </li>
+                    <li class="principal">
+                        <a href="#">Dormitorio</a>
+                        <ul >
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Camas</a></li>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Ropa de cama</a></li>
+                            <li class="escondido"><a href="#" class="elemento" mnclick=menu(this)>Colchones</a></li>
+                            <li class="escondido"><a href="#" class="elemento"onclick=menu(this)>Muebles dormitorio</a></li>
+                        </ul>
+                    </li>
+                    <li class="principal">
+                        <a href="#">Electronica</a>
+                        <ul > 
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Televisores</a></li>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Audio</a></li>
+                            <li class="escondido"><a href="#" class="elemento" onclick=menu(this)>Destacado</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <p id="p"></p>
+        <script src="interactivo.js"></script>
+    </body>
+</html>
